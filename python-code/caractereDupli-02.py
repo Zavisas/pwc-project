@@ -1,11 +1,3 @@
 def remove_repeated(key):
-  alfabeto = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
-  out = key.upper()
-  
-  for letter in alfabeto:
-    if not letter in key.upper():
-      out += letter
-  return out
-print(remove_repeated("JOAOZAVISAS"))
-
-
+    return "".join(list(dict.fromkeys(key.upper())))
+print(remove_repeated('Hello, World!'))
