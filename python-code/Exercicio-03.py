@@ -2,7 +2,7 @@ def expandAroundCenter(s, left, right):
     while left >= 0 and right < len(s) and s[left] == s[right]:
         left -= 1
         right += 1
-    return s[left + 1:right]
+    return s[left+1:right]
 
 def longestPalindrome(s):
     if len(s) < 2:
@@ -22,9 +22,9 @@ def longestPalindrome(s):
 
     return longest
 
-# Solicitar entrada do usuário
-input_string = input("Digite uma palavra: ")
+# Input
+input_str = "babad"
 
-# Encontrar a substring palindrômica
-output = longestPalindrome(input_string)
-print("A substring palindrômica é: ",output)
+# Encontrar a maior substring palindrômica
+output_str = longestPalindrome(input_str)
+print(output_str)
