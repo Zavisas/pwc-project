@@ -22,9 +22,17 @@ def longestPalindrome(s):
 
     return longest
 
-# Input
-input_str = "babad"
+while True:
+    # Solicitar entrada do usuário
+    input_str = input("Digite a palavra de exemplo: ")
 
-# Encontrar a maior substring palindrômica
-output_str = longestPalindrome(input_str)
-print(output_str)
+    # Verificar se a entrada é um número
+    if input_str.isdigit():
+        print("Entrada inválida. Digite uma palavra válida.")
+    else:
+        # Encontrar a maior substring palindrômica
+        output_str = longestPalindrome(input_str)
+
+        # Imprimir a substring palindrômica
+        print("Substring palindrômica:", output_str)
+        break
